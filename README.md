@@ -15,24 +15,38 @@
 ### GaleryAdapter
 ### HomestayAdapter
 ### WisataAdapter
+### LokasiAdapter
+### KategoriAdapter
 # Model :
 ### Galeri
 ### GetGaleri
 ### GetHomestay
 ### GetWisata 
+### GetLokasi
+### GetKategori 
 ### Homestay
 ### Wisata
+### Lokasi
+### Kategori
+### PostPulDelKategori
+### PostPulDelLokasi
 # Rest :
 ### ApiClient
 ### ApiInterface
 # Class :
-### Home
-### LayarDetailHomestay
-### LayarDetailWisata
-### LayarListGaleri
-### LayarListWisata
+### LayarDetailKategori
+### LayarDetailLokasi
+### LayarEditGaleri
+### LayarEditHomestay
+### LayarEditWisata
+### LayarInsertHomestay
+### LayarInsertKategori
+### LayarInsertGaleri
 ### LayarListHomestay
-### Login
+### LayarListKategori
+### LayarListGaleri
+### LayarLogin
 ### MainActivity
+### PageAdmin
 
 
