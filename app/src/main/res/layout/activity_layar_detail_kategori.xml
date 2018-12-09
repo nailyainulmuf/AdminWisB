@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:id= "@+id/layardetail"
+    android:layout_width= "match_parent"
+    android:layout_height= "match_parent"
+    android:background="@drawable/back3"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context= ".LayarDetailKategori" >
+    <TextView
+        android:id= "@+id/txtData"
+        android:layout_width= "wrap_content"
+        android:layout_height= "wrap_content"
+        android:text= "Data Kategori"
+        android:textSize= "40sp"
+        android:textStyle="bold"
+        android:textColor="#ffd700"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:id= "@+id/tvIdKategori2"
+        android:layout_width= "wrap_content"
+        android:layout_height= "wrap_content"
+        android:text= "Id Kategori : "
+        android:layout_below="@+id/txtData"
+        android:textColor="#ffffff"
+        android:textSize= "20sp" />
+
+    <EditText
+        android:id= "@+id/edtIdKategori"
+        android:layout_width= "wrap_content"
+        android:layout_height= "wrap_content"
+        android:hint= "id kategori"
+        android:layout_below="@+id/tvIdKategori2"
+        android:textColor="#ffffff"
+        android:layout_alignStart="@+id/tvIdKategori2"
+        android:layout_alignLeft="@+id/tvIdKategori2" />
+
+    <TextView
+        android:id= "@+id/tvNamaKategori2"
+        android:layout_width= "wrap_content"
+        android:layout_height= "wrap_content"
+        android:text= "Nama Kategori : "
+        android:layout_below= "@id/edtIdKategori"
+        android:textColor="#ffffff"
+        android:textSize= "20sp" />
+
+    <EditText
+        android:id= "@+id/edtNamaKategori"
+        android:layout_width= "wrap_content"
+        android:layout_height= "wrap_content"
+        android:hint= "Nama Kategori"
+        android:layout_below="@+id/tvNamaKategori2"
+        android:layout_alignStart="@+id/tvNamaKategori2"
+        android:textColor="#ffffff"
+        android:layout_alignLeft= "@+id/tvNamaKategori2" />
+
+    <LinearLayout
+        android:id= "@+id/Linearlayout2"
+        android:layout_width= "wrap_content"
+        android:layout_height= "wrap_content"
+        android:orientation= "horizontal"
+        android:layout_below= "@+id/edtNamaKategori"
+        android:layout_centerHorizontal= "true"
+        android:layout_marginTop= "10dp"
+        android:layout_marginBottom= "10dp"
+
+        tools:ignore="NotSibling">
+
+        <Button
+            android:id= "@+id/btUpdate2"
+            android:background="@drawable/edit"
+            android:layout_width= "110dp"
+            android:layout_height= "110dp"
+            />
+        <Button
+            android:id= "@+id/btDelete2"
+            android:background="@drawable/delete"
+            android:layout_width= "110dp"
+            android:layout_height= "110dp"
+            android:layout_marginLeft="1dp" />
+        <Button
+            android:id= "@+id/btBack"
+            android:background="@drawable/back"
+            android:layout_width= "110dp"
+            android:layout_height= "110dp"
+            android:layout_marginLeft="1dp"/>
+    </LinearLayout >
+    <TextView
+        android:id= "@+id/tvMessage2"
+        android:layout_width= "wrap_content"
+        android:layout_height= "wrap_content"
+        android:text= "Pesan Muncul disini"
+        android:layout_below= "@+id/Linearlayout2"
+        android:textSize= "20sp"
+        android:inputType= "textMultiLine"
+        android:textColor="#ffffff"
+        tools:ignore="NotSibling" />
+</RelativeLayout>

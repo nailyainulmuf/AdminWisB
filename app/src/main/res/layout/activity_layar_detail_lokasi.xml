@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:id= "@+id/layardetail"
+    android:layout_width= "match_parent"
+    android:layout_height= "match_parent"
+    android:background="@drawable/back3"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context= ".LayarDetailLokasi" >
+    <TextView
+        android:id= "@+id/txtData"
+        android:layout_width= "wrap_content"
+        android:layout_height= "wrap_content"
+        android:text= "Data Lokasi"
+        android:textSize= "40sp"
+        android:textStyle="bold"
+        android:textColor="#ffd700"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:id= "@+id/tvIdLokasi2"
+        android:layout_width= "wrap_content"
+        android:layout_height= "wrap_content"
+        android:text= "Id Lokasi : "
+        android:layout_below="@+id/txtData"
+        android:textColor="#ffffff"
+        android:textSize= "20sp" />
+
+    <EditText
+        android:id= "@+id/edtIdLokasi"
+        android:layout_width= "wrap_content"
+        android:layout_height= "wrap_content"
+        android:hint= "id lokasi"
+        android:layout_below="@+id/tvIdLokasi2"
+        android:textColor="#ffffff"
+        android:layout_alignStart="@+id/tvIdLokasi2"
+        android:layout_alignLeft="@+id/tvIdLokasi2" />
+
+    <TextView
+        android:id= "@+id/tvNamaLokasi2"
+        android:layout_width= "wrap_content"
+        android:layout_height= "wrap_content"
+        android:text= "Nama Lokasi : "
+        android:layout_below= "@id/edtIdLokasi"
+        android:textColor="#ffffff"
+        android:textSize= "20sp" />
+
+    <EditText
+        android:id= "@+id/edtNamaLokasi"
+        android:layout_width= "wrap_content"
+        android:layout_height= "wrap_content"
+        android:hint= "Nama lokasi"
+        android:layout_below="@+id/tvNamaLokasi2"
+        android:layout_alignStart="@+id/tvNamaLokasi2"
+        android:textColor="#ffffff"
+        android:layout_alignLeft= "@+id/tvNamaLokasi2" />
+
+    <TextView
+        android:id= "@+id/tvAlamat2"
+        android:layout_width= "wrap_content"
+        android:layout_height= "wrap_content"
+        android:text= "Alamat : "
+        android:layout_below= "@id/edtNamaLokasi"
+        android:textColor="#ffffff"
+        android:textSize= "20sp" />
+
+    <EditText
+        android:id= "@+id/edtAlamat"
+        android:layout_width= "wrap_content"
+        android:layout_height= "wrap_content"
+        android:hint= "Alamat"
+        android:layout_below="@+id/tvAlamat2"
+        android:textColor="#ffffff"
+        android:layout_alignStart="@+id/tvAlamat2"
+        android:layout_alignLeft= "@+id/tvAlamat2" />
+    <LinearLayout
+        android:id= "@+id/Linearlayout2"
+        android:layout_width= "wrap_content"
+        android:layout_height= "wrap_content"
+        android:orientation= "horizontal"
+        android:layout_below= "@+id/edtAlamat"
+        android:layout_centerHorizontal= "true"
+        android:layout_marginTop= "10dp"
+        android:layout_marginBottom= "10dp"
+
+        tools:ignore="NotSibling">
+
+        <Button
+            android:id= "@+id/btUpdate2"
+            android:background="@drawable/edit"
+            android:layout_width= "110dp"
+            android:layout_height= "110dp"
+            />
+        <Button
+            android:id= "@+id/btDelete2"
+            android:background="@drawable/delete"
+            android:layout_width= "110dp"
+            android:layout_height= "110dp"
+            android:layout_marginLeft="1dp" />
+        <Button
+            android:id= "@+id/btBack"
+            android:background="@drawable/back"
+            android:layout_width= "110dp"
+            android:layout_height= "110dp"
+            android:layout_marginLeft="1dp"/>
+    </LinearLayout >
+    <TextView
+        android:id= "@+id/tvMessage2"
+        android:layout_width= "wrap_content"
+        android:layout_height= "wrap_content"
+        android:text= "Pesan Muncul disini"
+        android:layout_below= "@+id/Linearlayout2"
+        android:textSize= "20sp"
+        android:inputType= "textMultiLine"
+        android:textColor="#ffffff"
+        tools:ignore="NotSibling" />
+</RelativeLayout>

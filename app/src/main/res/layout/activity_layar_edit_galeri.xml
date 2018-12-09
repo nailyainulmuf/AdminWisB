@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:id= "@+id/activity_post_put_del_pembeli"
+    android:layout_width= "match_parent"
+    android:layout_height= "match_parent"
+    android:scrollbars= "vertical"
+    android:background="@drawable/back3"
+    tools:context= ".LayarEditWisata" >
+    <RelativeLayout
+        android:layout_width= "match_parent"
+        android:layout_height= "match_parent"
+        android:layout_margin= "10dp" >
+        <ImageView
+            android:id= "@+id/imgPhotoId"
+            android:layout_width= "200dp"
+            android:layout_height= "200dp"
+            android:layout_centerHorizontal= "true"
+            android:src= "@drawable/backwis"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:id="@+id/btPhotoId"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_below= "@+id/imgPhotoId"
+            android:layout_centerHorizontal= "true"
+            android:text= "Select Photo Id"
+            android:background="@color/accent"/>
+        <TextView
+            android:id= "@+id/tvIdGaleri"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_below= "@+id/btPhotoId"
+            android:layout_marginTop= "10dp"
+            android:text= "ID Galeri :"
+            android:textSize= "20dp"
+            android:textColor="#ffffff"/>
+
+        <EditText
+            android:id="@+id/edtIdGaleri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btPhotoId"
+            android:layout_centerHorizontal="true"
+            android:enabled="false"
+            android:hint="id_galeri"
+            android:textColor="#ffffff" />
+        <TextView
+            android:id= "@+id/tvJudul"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_below= "@+id/tvIdGaleri"
+            android:text= "Judul :"
+            android:textSize= "20dp"
+            android:textColor="#ffffff"/>
+        <EditText
+            android:id= "@+id/edtJudul"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_alignBaseline= "@+id/tvJudul"
+            android:layout_alignLeft= "@+id/edtIdGaleri"
+            android:layout_toRightOf= "@+id/tvJudul"
+            android:hint= "Nama"
+            android:textColor="#ffffff"/>
+        <TextView
+            android:id= "@+id/tvTanggal"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_below= "@+id/tvJudul"
+            android:text= "Tanggal :"
+            android:textSize= "20dp"
+            android:textColor="#ffffff"/>
+        <EditText
+            android:id= "@+id/edtTanggal"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_alignBaseline= "@+id/tvTanggal"
+            android:layout_alignLeft= "@+id/edtIdGaleri"
+            android:layout_toRightOf= "@+id/tvTanggal"
+            android:hint= "tanggal"
+            android:inputType="date"
+            android:textColor="#ffffff"/>
+
+        <LinearLayout
+            android:id= "@+id/LinearLayout"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_below= "@+id/tvTanggal"
+            android:layout_centerHorizontal= "true"
+            android:orientation= "horizontal"
+            android:layout_marginTop= "20dp"
+            android:layout_marginBottom= "5dp" >
+            <Button
+                android:id= "@+id/btUpdate"
+                android:background="@drawable/edit"
+                android:layout_width= "110dp"
+                android:layout_height= "110dp"/>
+            <Button
+                android:id= "@+id/btDelete"
+                android:background="@drawable/delete"
+                android:layout_width= "110dp"
+                android:layout_height= "110dp"
+                android:layout_marginLeft="10dp"/>
+            <Button
+                android:id= "@+id/btBack"
+                android:background="@drawable/back"
+                android:layout_width= "110dp"
+                android:layout_height= "110dp"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="16dp"
+            android:hint="Pesan"
+            android:inputType="textMultiLine"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="20dp"
+            android:layout_below="@+id/LinearLayout"
+            android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+</ScrollView>

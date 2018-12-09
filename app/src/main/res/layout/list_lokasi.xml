@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width= "match_parent"
+    android:layout_height= "wrap_content"
+    android:orientation= "vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+    <RelativeLayout
+        android:layout_width= "wrap_content"
+        android:layout_height= "wrap_content" >
+
+        <TextView
+            android:id="@+id/tvNamaLokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Nama Lokasi :"
+            android:textColor="#ffffff"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvNamaLokasiContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNamaLokasi"
+            android:layout_marginTop="5dp"
+            android:hint="Bawean"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvAlamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Alamat :"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/tvNamaLokasiContent"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAlamatContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAlamat"
+            android:layout_marginTop="5dp"
+            android:hint="alamat"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <View
+        android:background= "#ffd700"
+        android:layout_width= "match_parent"
+        android:layout_height= "1.5dp"
+        android:paddingLeft="20sp"/>
+</LinearLayout>

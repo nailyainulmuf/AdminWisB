@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Admin Wisata Bawean</string>
+    <string name="et_email">Email</string>
+    <string name="et_password">Password</string>
+</resources>

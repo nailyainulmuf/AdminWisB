@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width= "match_parent"
+    android:layout_height= "wrap_content"
+    android:orientation= "vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <!--<TextView
+            android:id= "@+id/tvNama"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_alignParentLeft= "true"
+            android:layout_alignParentStart= "true"
+            android:layout_alignParentTop= "true"
+            android:hint= "Nama"
+            android:textColor="#ffd700"
+            android:textSize= "20sp"
+            android:textStyle= "bold"/>-->
+        <ImageView
+            android:id="@+id/imgHomestay"
+            android:layout_width="160dp"
+            android:layout_height="181dp"
+            android:layout_marginTop= "10dp"
+            android:src= "@drawable/backwis" />
+
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imgHomestay"
+            android:layout_below="@id/tvNama"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgHomestay"
+            android:hint="Nama Homestay"
+            android:textColor="@color/accent_dark"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvFasilitas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNama"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgHomestay"
+            android:hint="Fasilitas :"
+            android:textColor="#ffffff"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvFasilitasContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvFasilitas"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgHomestay"
+            android:hint="Ac"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvFasilitasContent"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgHomestay"
+            android:hint="Harga :"
+            android:textColor="#ffffff"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvHargaContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHarga"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgHomestay"
+            android:hint="160000"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/tvContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHargaContent"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgHomestay"
+            android:hint="Contact :"
+            android:textColor="#ffffff"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvContactContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvContact"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgHomestay"
+            android:hint="45678"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/tvLokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvContactContent"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgHomestay"
+            android:hint="Alamat :"
+            android:textColor="#ffffff"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvLokasiContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvLokasi"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgHomestay"
+            android:hint="jl.patimura"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <View
+        android:background= "#ffd700"
+        android:layout_width= "match_parent"
+        android:layout_height= "1.5dp"
+        android:paddingLeft="20sp"/>
+</LinearLayout>

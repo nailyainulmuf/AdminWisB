@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:id= "@+id/activity_post_put_del_wisata"
+    android:layout_width= "match_parent"
+    android:layout_height= "match_parent"
+    android:orientation= "vertical"
+    android:padding= "10dp"
+    android:background="@drawable/back3" >
+    <RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_width= "match_parent"
+        android:layout_height= "match_parent"
+        android:layout_margin= "10dp"
+        >
+        <TextView
+            android:id= "@+id/tvAddIdKategori"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_marginRight= "50dp"
+            android:text= "Id Kategori :"
+            android:textSize= "20dp"
+            android:textColor="#ffffff"/>
+
+        <EditText
+            android:id="@+id/edtAddIdKategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-10dp"
+            android:hint="Id kategori"
+            android:layout_alignBaseline= "@+id/tvAddIdKategori"
+            android:layout_alignParentEnd= "true"
+            android:layout_toRightOf= "@+id/tvAddIdKategori"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id= "@+id/tvAddNama"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_marginRight= "50dp"
+            android:layout_below="@+id/tvAddIdKategori"
+            android:text= "Nama Kategori :"
+            android:textSize= "20dp"
+            android:textColor="#ffffff"/>
+
+        <EditText
+            android:id="@+id/edtAddNamakategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-10dp"
+            android:hint="Nama Kategori"
+            android:layout_alignBaseline= "@+id/tvAddNama"
+            android:layout_toRightOf= "@+id/tvAddNama"
+            android:layout_alignLeft= "@+id/edtAddIdKategori"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:id= "@+id/LinearLayout"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_below= "@+id/tvAddNama"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom= "5dp"
+            android:layout_marginTop= "20dp"
+            android:orientation= "horizontal" >
+            <Button
+                android:id= "@+id/btAddData"
+                android:background="@drawable/insert"
+                android:layout_width= "110dp"
+                android:layout_height= "110dp"
+                />
+            <Button
+                android:id= "@+id/btAddBack"
+                android:background="@drawable/back"
+                android:layout_width= "110dp"
+                android:layout_height= "110dp"
+                />
+        </LinearLayout >
+
+        <TextView
+            android:id="@+id/tvAddMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:hint="Pesan"
+            android:inputType="textMultiLine"
+            android:layout_below="@+id/LinearLayout"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="20dp"
+            android:layout_alignParentLeft="true" />
+
+    </RelativeLayout >
+
+
+</ScrollView>

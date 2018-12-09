@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:id= "@+id/activity_post_put_del_wisata"
+    android:layout_width= "match_parent"
+    android:layout_height= "match_parent"
+    android:orientation= "vertical"
+    android:padding= "10dp"
+    android:background="@drawable/back3" >
+    <RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_width= "match_parent"
+        android:layout_height= "match_parent"
+        android:layout_margin= "10dp" >
+        <ImageView
+            android:id= "@+id/imgAddPhotoId"
+            android:layout_width= "200dp"
+            android:layout_height= "200dp"
+            android:layout_centerHorizontal= "true"
+            android:src= "@drawable/backwis"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:id= "@+id/btAddPhotoId"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_below= "@+id/imgAddPhotoId"
+            android:layout_centerHorizontal= "true"
+            android:background="@color/accent"
+            android:text= "Pilih Foto"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:id= "@+id/tvAddNama"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_below= "@+id/btAddPhotoId"
+            android:layout_marginRight= "50dp"
+            android:text= "Nama Wisata :"
+            android:textSize= "20dp"
+            android:textColor="#ffffff"/>
+
+        <EditText
+            android:id="@+id/edtAddNamaWisata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btAddPhotoId"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-10dp"
+            android:hint="Nama"
+            android:textColor="#ffffff" />
+        <TextView
+            android:id= "@+id/tvAddKategori"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_below= "@+id/tvAddNama"
+            android:text= "Kategori :"
+            android:textSize= "20dp"
+            android:textColor="#ffffff"/>
+        <EditText
+            android:id= "@+id/edtAddKategoriWisata"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_alignBaseline= "@+id/tvAddKategori"
+            android:layout_alignLeft= "@+id/edtAddNamaWisata"
+            android:layout_alignParentEnd= "true"
+            android:layout_toRightOf= "@+id/tvAddKategori"
+            android:hint= "ID Kategori"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true" />
+        <TextView
+            android:id= "@+id/tvAddDeskripsi"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_below= "@+id/tvAddKategori"
+            android:text= "Deskripsi :"
+            android:textSize= "20dp"
+            android:textColor="#ffffff"/>
+        <EditText
+            android:id= "@+id/edtAddDeskripsiWisata"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_alignBaseline= "@+id/tvAddDeskripsi"
+            android:layout_alignLeft= "@+id/edtAddNamaWisata"
+            android:layout_alignParentEnd= "true"
+            android:layout_toRightOf= "@+id/tvAddDeskripsi"
+            android:hint= "Deskripsi"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom= "20dp"/>
+        <TextView
+            android:id= "@+id/tvAddLokasi"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_below= "@+id/tvAddDeskripsi"
+            android:text= "Alamat :"
+            android:textSize= "20dp"
+            android:textColor="#ffffff"/>
+        <EditText
+            android:id= "@+id/edtAddLokasiWisata"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_alignBaseline= "@+id/tvAddLokasi"
+            android:layout_alignLeft= "@+id/edtAddNamaWisata"
+            android:layout_alignParentEnd= "true"
+            android:layout_toRightOf= "@+id/tvAddLokasi"
+            android:hint= "ID lokasi"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom= "20dp"/>
+        <LinearLayout
+            android:id= "@+id/LinearLayout"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_below= "@+id/tvAddLokasi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom= "5dp"
+            android:layout_marginTop= "20dp"
+            android:orientation= "horizontal" >
+            <Button
+                android:id= "@+id/btAddData"
+                android:background="@drawable/insert"
+                android:layout_width= "110dp"
+                android:layout_height= "110dp"
+                />
+            <Button
+                android:id= "@+id/btAddBack"
+                android:background="@drawable/back"
+                android:layout_width= "110dp"
+                android:layout_height= "110dp"
+                />
+        </LinearLayout >
+
+        <TextView
+            android:id="@+id/tvAddMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:hint="Pesan"
+            android:inputType="textMultiLine"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="20dp"
+            android:layout_alignParentLeft="true" />
+
+    </RelativeLayout >
+
+
+</ScrollView>

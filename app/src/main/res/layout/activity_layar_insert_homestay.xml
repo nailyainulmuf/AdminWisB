@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:id= "@+id/activity_post_put_del_homestay"
+    android:layout_width= "match_parent"
+    android:layout_height= "match_parent"
+    android:orientation= "vertical"
+    android:padding= "10dp"
+    android:background="@drawable/back3">
+    <RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_width= "match_parent"
+        android:layout_height= "match_parent"
+        android:layout_margin= "10dp" >
+        <ImageView
+            android:id= "@+id/imgAddPhotoId"
+            android:layout_width= "200dp"
+            android:layout_height= "200dp"
+            android:layout_centerHorizontal= "true"
+            android:src= "@drawable/backwis"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:id= "@+id/btAddPhotoId"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_below= "@+id/imgAddPhotoId"
+            android:layout_centerHorizontal= "true"
+            android:background="@color/accent"
+            android:text= "Pilih Foto"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:id= "@+id/tvAddNama"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_below= "@+id/btAddPhotoId"
+            android:layout_marginRight= "50dp"
+            android:text= "Nama Homestay :"
+            android:textSize= "20dp"
+            android:textColor="#ffffff"/>
+
+        <EditText
+            android:id="@+id/edtAddNamaHomestay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/btAddPhotoId"
+            android:layout_marginEnd="118dp"
+            android:layout_marginTop="-10dp"
+            android:hint="Nama"
+            android:textColor="#ffffff" />
+        <TextView
+            android:id= "@+id/tvAddFasilitas"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_below= "@+id/tvAddNama"
+            android:text= "Fasilitas :"
+            android:textSize= "20dp"
+            android:textColor="#ffffff"/>
+        <EditText
+            android:id= "@+id/edtAddFasilitasHomestay"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_alignBaseline= "@+id/tvAddFasilitas"
+            android:layout_alignLeft= "@+id/edtAddNamaHomestay"
+            android:layout_alignParentEnd= "true"
+            android:layout_toRightOf= "@+id/tvAddFasilitas"
+            android:hint= "Fasilitas"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true" />
+        <TextView
+            android:id= "@+id/tvAddHarga"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_below= "@+id/tvAddFasilitas"
+            android:text= "Harga :"
+            android:textSize= "20dp"
+            android:textColor="#ffffff"/>
+        <EditText
+            android:id= "@+id/edtAddHargaHomestay"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_alignBaseline= "@+id/tvAddHarga"
+            android:layout_alignLeft= "@+id/edtAddNamaHomestay"
+            android:layout_alignParentEnd= "true"
+            android:layout_toRightOf= "@+id/tvAddHarga"
+            android:hint= "Harga"
+            android:inputType="number"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom= "20dp"/>
+        <TextView
+            android:id= "@+id/tvAddContact"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_below= "@+id/tvAddHarga"
+            android:text= "Contact :"
+            android:textSize= "20dp"
+            android:textColor="#ffffff"/>
+        <EditText
+            android:id= "@+id/edtAddContactHomestay"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_alignBaseline= "@+id/tvAddContact"
+            android:layout_alignLeft= "@+id/edtAddNamaHomestay"
+            android:layout_alignParentEnd= "true"
+            android:layout_toRightOf= "@+id/tvAddContact"
+            android:hint= "Contact"
+            android:inputType="phone"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom= "20dp"/>
+        <TextView
+            android:id= "@+id/tvAddLokasi"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_below= "@+id/tvAddContact"
+            android:text= "Alamat :"
+            android:textSize= "20dp"
+            android:textColor="#ffffff"/>
+        <EditText
+            android:id= "@+id/edtAddLokasiHomestay"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_alignBaseline= "@+id/tvAddLokasi"
+            android:layout_alignLeft= "@+id/edtAddNamaHomestay"
+            android:layout_alignParentEnd= "true"
+            android:layout_toRightOf= "@+id/tvAddLokasi"
+            android:hint= "id lokasi"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom= "20dp"/>
+        <LinearLayout
+            android:id= "@+id/LinearLayout"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_below= "@+id/tvAddLokasi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom= "5dp"
+            android:layout_marginTop= "20dp"
+            android:orientation= "horizontal" >
+            <Button
+                android:id= "@+id/btAddData"
+                android:background="@drawable/insert"
+                android:layout_width= "110dp"
+                android:layout_height= "110dp"
+                />
+            <Button
+                android:id= "@+id/btAddBack"
+                android:background="@drawable/back"
+                android:layout_width= "110dp"
+                android:layout_height= "110dp"
+                />
+        </LinearLayout >
+
+        <TextView
+            android:id="@+id/tvAddMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:hint="Pesan"
+            android:inputType="textMultiLine"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="20dp"
+            android:layout_alignParentLeft="true" />
+
+    </RelativeLayout >
+
+
+</ScrollView>

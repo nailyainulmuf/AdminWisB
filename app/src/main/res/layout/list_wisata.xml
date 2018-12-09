@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width= "match_parent"
+    android:layout_height= "wrap_content"
+    android:orientation= "vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/imgWisata"
+            android:layout_width="160dp"
+            android:layout_height="181dp"
+            android:layout_marginTop= "10dp"
+            android:src= "@drawable/backwis" />
+
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imgWisata"
+            android:layout_below="@id/tvNama"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgWisata"
+            android:hint="Nama Wisata"
+            android:textColor="@color/accent_dark"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tvDeskripsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNama"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgWisata"
+            android:hint="Deskripsi :"
+            android:textColor="#ffffff"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDeskripsiContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDeskripsi"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgWisata"
+            android:hint="Indahnyaaa"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvAlamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDeskripsiContent"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgWisata"
+            android:hint="Lokasi :"
+            android:textColor="#ffffff"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAlamatContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAlamat"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgWisata"
+            android:hint="Gresik"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvKategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAlamatContent"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgWisata"
+            android:hint="Wisata Pantai"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <View
+        android:background= "#ffd700"
+        android:layout_width= "match_parent"
+        android:layout_height= "1.5dp"
+        android:paddingLeft="20sp"/>
+</LinearLayout>

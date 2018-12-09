@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@drawable/back3">
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:src="@drawable/user" />
+
+
+    <TextView
+        android:id="@+id/txv_greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome "
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_toEndOf="@+id/txv_greeting"
+        android:layout_toRightOf="@+id/txv_greeting"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/txv_greeting"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn_wisata"
+        android:layout_width="240dp"
+        android:layout_height="115dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="173dp"
+        android:background="@drawable/ws" />
+
+    <Button
+        android:id="@+id/btn_homestay"
+        android:layout_width="240dp"
+        android:layout_height="115dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/home" />
+
+    <Button
+        android:id="@+id/btn_kategori"
+        android:layout_width="267dp"
+        android:layout_height="125dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="177dp"
+        android:background="@drawable/kategori" />
+
+    <Button
+        android:id="@+id/btn_lokasi"
+        android:layout_width="266dp"
+        android:layout_height="125dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="102dp"
+        android:background="@drawable/lokasi" />
+
+    <Button
+        android:id="@+id/btn_galeri"
+        android:layout_width="227dp"
+        android:layout_height="106dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/gal" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_galeri"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-46dp"
+        android:background="#ffcf0e"
+        android:onClick="button_onClick"
+        android:text="LOGOUT"
+        android:textColor="#000000" />
+
+</RelativeLayout>

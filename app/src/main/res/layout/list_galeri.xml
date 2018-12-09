@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width= "match_parent"
+    android:layout_height= "wrap_content"
+    android:orientation= "vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/imgWisata"
+            android:layout_width="160dp"
+            android:layout_height="181dp"
+            android:layout_marginTop= "10dp"
+            android:src= "@drawable/backwis" />
+
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imgWisata"
+            android:layout_below="@id/tvNama"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgWisata"
+            android:hint="Nama Wisata"
+            android:textColor="@color/accent_dark"
+            android:textSize="25sp" />
+
+
+        <TextView
+            android:id="@+id/tvTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvNama"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgWisata"
+            android:hint="2018-05-18"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <View
+        android:background= "#ffd700"
+        android:layout_width= "match_parent"
+        android:layout_height= "1.8dp"
+        android:paddingLeft="20sp"/>
+</LinearLayout>

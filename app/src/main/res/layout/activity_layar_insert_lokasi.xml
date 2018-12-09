@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:id= "@+id/activity_post_put_del_wisata"
+    android:layout_width= "match_parent"
+    android:layout_height= "match_parent"
+    android:orientation= "vertical"
+    android:padding= "10dp"
+    android:background="@drawable/back3" >
+    <RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_width= "match_parent"
+        android:layout_height= "match_parent"
+        android:layout_margin= "10dp"
+        >
+        <TextView
+            android:id= "@+id/tvAddIdLokasi"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_marginRight= "50dp"
+            android:text= "Id Lokasi :"
+            android:textSize= "20dp"
+            android:textColor="#ffffff"/>
+
+        <EditText
+            android:id="@+id/edtAddIdLokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-10dp"
+            android:hint="Id lokasi"
+            android:layout_alignBaseline= "@+id/tvAddIdLokasi"
+            android:layout_alignParentEnd= "true"
+            android:layout_toRightOf= "@+id/tvAddIdLokasi"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id= "@+id/tvAddNama"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_marginRight= "50dp"
+            android:layout_below="@+id/tvAddIdLokasi"
+            android:text= "Nama Lokasi :"
+            android:textSize= "20dp"
+            android:textColor="#ffffff"/>
+
+        <EditText
+            android:id="@+id/edtAddNamaLokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-10dp"
+            android:hint="Nama lokasi"
+            android:layout_alignBaseline= "@+id/tvAddNama"
+            android:layout_toRightOf= "@+id/tvAddNama"
+            android:layout_alignLeft= "@+id/edtAddIdLokasi"
+            android:textColor="#ffffff" />
+        <TextView
+            android:id= "@+id/tvAddAlamat"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_below= "@+id/tvAddNama"
+            android:text= "Alamat :"
+            android:textSize= "20dp"
+            android:textColor="#ffffff"/>
+        <EditText
+            android:id= "@+id/edtAddAlamatLokasi"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_alignBaseline= "@+id/tvAddAlamat"
+            android:layout_alignLeft= "@+id/edtAddIdLokasi"
+            android:layout_alignParentEnd= "true"
+            android:layout_toRightOf= "@+id/tvAddAlamat"
+            android:hint= "Alamat"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true" />
+
+        <LinearLayout
+            android:id= "@+id/LinearLayout"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_below= "@+id/tvAddAlamat"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom= "5dp"
+            android:layout_marginTop= "20dp"
+            android:orientation= "horizontal" >
+            <Button
+                android:id= "@+id/btAddData"
+                android:background="@drawable/insert"
+                android:layout_width= "110dp"
+                android:layout_height= "110dp"
+                />
+            <Button
+                android:id= "@+id/btAddBack"
+                android:background="@drawable/back"
+                android:layout_width= "110dp"
+                android:layout_height= "110dp"
+                />
+        </LinearLayout >
+
+        <TextView
+            android:id="@+id/tvAddMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:hint="Pesan"
+            android:inputType="textMultiLine"
+            android:layout_below="@+id/LinearLayout"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="20dp"
+            android:layout_alignParentLeft="true" />
+
+    </RelativeLayout >
+
+
+</ScrollView>
